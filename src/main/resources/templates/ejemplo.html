@@ -2,22 +2,23 @@
 <html lang="en">
 
 <head>
-
   <title>Ejemplo</title>
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
 </head>
 
-<body>
-  <!--***********************CONTENIDO*****************************************  -->
+<body style="background-color:#0D7AAF ;">
+  <!--***********************CONTENIDO*****************************************-->
   <div class="container" style="text-align: center;">
-    <h1>LISTADO DE PERSONAS</h1>
-    <!-- Button para abrir el Modal para Nuevo registro-->
-    <button type="button" class="btn btn-primary mt-4" data-toggle="modal" data-target="#nuevo">Nuevo</button>
-
+    <div>
+      <h1 style="color: white;">LISTADO DE PERSONAS</h1>
+    </div>
+    <div style="float: right; margin-top: -74px;">
+      <!-- Button para abrir el Modal para Nuevo registro-->
+      <button id="nuevo" type="button" class="btn btn-success mt-4" data-toggle="modal"
+        data-target="#nuevo2">Nuevo</button>
+    </div>
     <!-- Tabla donde estaran los datos -->
-    <table class="table mt-4; table table-dark" >
+    <table class="table mt-4; table table-dark">
       <thead>
         <tr>
           <th>Id</th>
@@ -39,7 +40,7 @@
   <!-- ********************************MODAL´S*********************************************** -->
 
   <!-- The Modal para nuevo registro-->
-  <div class="modal" id="nuevo">
+  <div class="modal" id="nuevo2">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
 
@@ -339,4 +340,5 @@
     }
   </script>
 </body>
+
 </html>
