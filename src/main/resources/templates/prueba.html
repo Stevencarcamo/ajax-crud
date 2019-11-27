@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>prueba</title>
+ </head>
+
+ <body>
+</body>
+<h1 id="demo"></h1>
+<h1 id="dia"></h1>
+
+<script>
+
+//******************************************************************//   
+var a = [10,9,8,7,6,5,4,3,2,1];
+    a.forEach(i=>{
+    alert(i);
+    });
+//******************************************************************//
+for(var i=0;i<a.length;i++){
+    alert("indice:"+i+"valor:"+a[i]);
+}
+//******************************************************************//
+function myFunction(p1,p2) {
+  return p1 / p2;}
+document.getElementById("demo").innerHTML=myFunction(100,3);
+//******************************************************************//
+var i=0;
+
+do{
+   i+=1;
+   alert(i); 
+}
+while(i<10);
+//******************************************************************//
+var i=0;
+while(i<10){
+    console.log(i);
+    i++;
+}
+//******************************************************************//
+//var  day="lunes";
+//switch (day) {
+   // case lunes :document.write("es lunes"); break;
+
+   //// default: break;
+//}
+//******************************************************************//
+var persona = {name:"steven",lastname:"chavez",hablar:function(){alert("hola");},tipo:{tipoPersona:"Buena",id:01}};
+alert(persona.name+""+persona.lastname);
+persona.hablar();
+alert(persona.tipo.tipoPersona);
+//******************************************************************//
+var personas = [{name:"steven",lastname:"chavez",hablar:function(){alert("hola");},tipo:{tipoPersona:"Buena",id:01},
+                 name:"juan"  ,lastname:"cortez",hablar:function(){alert("hola");},tipo:{tipoPersona:"mala" ,id:01}
+                 }];
+
+personas.forEach(item=>{
+    alert(item.name+""+item.lastname);
+});
+//******************************************************************//
+
+
+</script>
+
+</html>

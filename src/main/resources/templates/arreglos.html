@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+</head>
+<body>
+    
+</body>
+     <script>
+         var personas = [{nombre:"Jose", direccion:"la nada",hablar:function(){alert("soy"+personas[0].nombre);},
+                          mama:{nombre:"Julia", apellido:"Tobar"},papa:{nombre:"Julio",apellido:"Mejia"}},
+
+                        {nombre:"Maria", direccion:"por alla",hablar:function(){alert("soy"+personas[1].nombre);},
+                          mama:{nombre:"Manuela",apellido:"Perez"},papa:{nombre:"Jose",apellido:"Tobar"}},
+
+                        {nombre:"Elmer", direccion:"por ahi",hablar:function(){alert("soy"+personas[2].nombre);},
+                          mama:{nombre:"Teresa",apellido:"Martinez"},papa:null}]
+
+
+//personas.forEach(item =>{
+   // alert(item.nombre + " vive en " + item.direccion + " su mama se llama" + item.mama.nombre + "su papa se llama" + item.papa.nombre + ""+ item.papa.apellido);
+//});
+alert(personas[1].nombre);
+alert(personas[1].papa.nombre);
+
+     </script>  
+
+</html>
