@@ -9,30 +9,31 @@
 <body style="background-color:#0D7AAF ;">
   <!--***********************CONTENIDO*****************************************-->
   <div class="container" style="text-align: center;">
-    <div>
-      <h1 style="color: white;">LISTADO DE PERSONAS</h1>
+    <div style="margin-top: 50px;">
+      <h1 style="color: white;">LISTADO DE USUARIOS</h1>
     </div>
-    <div style="float: right; margin-top: -74px;">
+    <div style="float: right; margin-top: -74px; margin-right: 30px;">
       <!-- Button para abrir el Modal para Nuevo registro-->
       <button id="nuevo" type="button" class="btn btn-success mt-4" data-toggle="modal"
         data-target="#nuevo2">Nuevo</button>
     </div>
-    <!-- Tabla donde estaran los datos -->
-    <table class="table mt-4; table table-dark">
-      <thead>
-        <tr>
-          <th>Id</th>
-          <th>Nombre</th>
-          <th>Direccion</th>
-          <th>Telefono</th>
-          <th>Operaciones</th>
-        </tr>
-      </thead>
-      <tbody id="tdatos">
-      </tbody>
-    </table>
+    <div style="margin-top: 50px;">
+      <!-- Tabla donde estaran los datos -->
+      <table class="table mt-4; table table-dark">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Dirección</th>
+            <th>Telefono</th>
+            <th>Operaciones</th>
+          </tr>
+        </thead>
+        <tbody id="tdatos">
+        </tbody>
+      </table>
 
-
+    </div>
   </div>
 
 
@@ -46,7 +47,7 @@
 
         <!-- Modal Header -->
         <div class="modal-header">
-          <h4 class="modal-title">Agregar Usuario</h4>
+          <h4 class="modal-title" style="font-size: 37px; margin-left: 180px;">Agregar nuevo usuario</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
 
@@ -60,25 +61,26 @@
                 </div> -->
           <!-- Nombre -->
           <div class="form-group">
-            <label for="nombre">Nombre</label>
+            <label style="font-size: 20px;" for="nombre">Nombre:</label>
             <input type="text" name="nombre" id="nombre" class="form-control" placeholder="digite el nombre">
           </div>
           <!-- Direccion -->
           <div class="form-group">
-            <label for="direccion">Direccion</label>
+            <label style="font-size: 20px;" for="direccion">Dirección:</label>
             <textarea class="form-control" name="direccion" id="direccion" cols="30" rows="5"></textarea>
           </div>
           <!-- Telefono -->
           <div class="form-group">
-            <label for="telefono">Telefono</label>
+            <label style="font-size: 20px;" for="telefono">Teléfono:</label>
             <input type="text" name="telefono" id="telefono" class="form-control" placeholder="digite el telefono">
           </div>
 
         </div>
 
         <!-- Modal footer -->
-        <div class="modal-footer">
-          <button id="btnGuardar" type="button" class="btn btn-success" data-dismiss="modal">Guardar</button>
+        <div class="modal-footer"> 
+            <button type="button" class="btn btn-danger close" data-dismiss="modal">Cancelar</button>
+            <button id="btnGuardar" type="button" class="btn btn-info close" data-dismiss="modal">Guardar</button>
         </div>
 
       </div>
@@ -226,8 +228,8 @@
               + "<td>" + response[i].telefono + "</td>"
               // +"<td>"+response[i].tipoPersona.tipo+"</td>"
               + "<td>"
-              + "<button onclick='cargarRegistro(" + response[i].id + ")'  type='button' class='btn btn-warning ml-4 mt-1' data-toggle='modal' data-target='#editar'>Editar</button>"
-              + "<button onclick='setIdPersona(" + response[i].id + ");' type='button' class='btn btn-danger ml-4 mt-1' data-toggle='modal' data-target='#eliminar'>Eliminar</button>"
+              + "<button onclick='cargarRegistro(" + response[i].id + ")'  type='button' class='btn btn-primary ml-4 mt-1' data-toggle='modal' data-target='#editar'>Editar</button>"
+              + "<button onclick='setIdPersona  (" + response[i].id + ");' type='button' class='btn btn-danger ml-4 mt-1' data-toggle='modal' data-target='#eliminar'>Eliminar</button>"
               + "</td>"
               + "</tr>");
 
